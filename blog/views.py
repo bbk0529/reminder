@@ -52,7 +52,7 @@ def answer(request):
     elif datacontent =='Exchange':
         link="https://www.google.de/search?q=1euro+to+krw&oq=1euro+to+krw"
         page=requests.get(link)
-    	soup = BeautifulSoup(page.content, 'html.parser')
+    	soup=BeautifulSoup(page.content, 'html.parser')
     	result=soup.find(class_="BNeawe iBp4i AP7Wnd").get_text()
     	print(result)
 
