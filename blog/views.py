@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse,requests
+from django.http import JsonResponse
+import requests
 from bs4 import BeautifulSoup
 import json
 
